@@ -10,7 +10,7 @@ const MemberForm = props => {
   const submitHandler = event => {
     event.preventDefault();
     const newMember = {
-      ...memebr,
+      ...member,
       id: Date.now()
     };
     props.addNewMember(newMember);
