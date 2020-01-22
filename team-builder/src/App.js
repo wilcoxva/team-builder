@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Members from './components/Members';
+
+const [members, setMembers] = useState([]);
 
 function App() {
   return (
@@ -8,7 +11,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {members.map(member => {
+            return (
+              <Members
+
+              />
+            )}
+          )}
         </p>
         <a
           className="App-link"
